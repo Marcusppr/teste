@@ -5,7 +5,7 @@ import plotly.express as px
 st.set_page_config(layout='wide')
 
 # Carregando o arquivo Excel
-df = pd.read_excel(r'C:/Users/marcu/Documents/UnB/CFQ/Controle de Manifestações 2024 - Versão 29-04.xlsx', sheet_name= 'Ouvidoria em Números')
+df = pd.read_excel('Controle de Manifestações 2024 - Versão 29-04.xlsx', sheet_name= 'Ouvidoria em Números')
 
 # Verifica se a coluna "Mês" existe
 if 'Mês' not in df.columns:
